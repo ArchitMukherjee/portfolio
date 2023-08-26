@@ -1,0 +1,50 @@
+.page-heading{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.page-para{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.section-one{    
+    display: flex;
+    flex-direction: column;
+}
+.section-two{    
+    display: flex;
+    flex-direction: column;
+}
+.education-table{ 
+    padding: 0px 5% 0px 5%; 
+    height: 200px;
+    overflow-y: scroll;
+}
+.education-table-row{    
+    display: flex;
+    flex-direction: row;
+}
+.education-details{
+    font-size: 1.3rem;
+    padding: 10px;
+    flex: 2;
+    margin: 10px 10px 10px 10px;
+}
+.education-date{
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: left;
+    flex: 1;
+    margin: 10px 10px 10px 10px;
+}
+
+
+/*Full Page*/
+
+.full-page{
+    display: flex;
+    max-width: 100%px;
+    margin: 30px 300px 0px 300px;
+    justify-content:center;
+}
+

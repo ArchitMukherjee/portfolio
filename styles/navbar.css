@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.header{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 1.3rem 15%;
+    background-color: white;
+    border-bottom: 1px lightgray solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+    color: gray;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+.logo:hover{
+    color: black;
+}
+
+.navbar{
+    margin-right: auto;
+}
+
+.navbar .active{
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1.8rem;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+#check{
+    display: none;
+}
+
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+    
+}
+
+
+/* BREAKPOINTS */
+
+/* @media (max-width: 1024px){
+    .header{
+        padding: 1.3rem 5%; 
+    }
+} */
+
+@media (max-width: 768px){
+    .header{
+        padding: 1.3rem 4%; 
+    }
+
+    .icons{
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menue-icon{
+        display: none;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        height: 0px;
+        width: 100%;
+        z-index: 100;
+        border-bottom: 1px lightgray solid;
+        background-color: white;
+        overflow: hidden;
+        transition: 0.3s ease;
+    }
+
+    #check:checked~.navbar{
+        height: 15.2rem;
+        box-shadow: 0px 50px 50px rgba(0,0,0,0.2);
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 1.2rem;
+        margin: 2rem 0;
+        text-align: center;
+        translate: translateY(-50px);
+        transition: 0.3s ease;
+    }
+
+    #check:checked~.navbar a{
+        translate: translateY(0px);
+    }
+}

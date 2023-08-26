@@ -1,0 +1,122 @@
+#sidebar{
+    display: grid;
+    height: 42vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.8fr 1.2fr;
+    grid-template-areas: 
+    "avatar"
+    "bio"
+    "links";
+    grid-gap: 0.2rem;
+}
+#avatar{
+    grid-area: avatar;
+    margin: 0px 0px 10px 0px;    
+}
+#bio{
+    grid-area: bio;
+    margin: 0px 0px 10px 0px;    
+}
+#links{
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.link{
+    text-decoration: none;  
+}
+.link-tree{
+    border-radius: 0px;
+    padding: 0.5rem 0.5rem;
+    background: white;
+    border-width: 2px 2px 2px 2px;
+    border-color: gray;
+    border-radius: 4px;
+    border-style: solid;
+    text-decoration: none;
+    font-weight: 600;
+    color: gray;
+    display: none;
+}
+.link-tree:hover{
+    background: rgba(0,0,0,0.05);
+}
+
+.profile-avatar{
+    width: 100%;
+    max-width: 154px;
+    height: auto;
+    border-radius: 50%;
+    border-style: solid;    
+    border-color: lightgray;
+    border-width: 4px;
+}
+.bio-name{
+    font-size: 1.5rem;
+    font-weight:700;
+    text-align: left;
+}
+.bio-description{
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px){
+    #sidebar{
+        height: unset;
+        grid-template-columns: 0.1fr 0.9fr 0.1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "avatar bio links";
+        grid-gap: 0.2rem;
+    }
+    .profile-avatar{
+        max-height: 66px;
+        width: auto;
+        border-radius: 50%;
+        border-style: solid;    
+        border-color: #d4d4d4;
+        border-width: 2px;
+    }
+    .bio-name{
+        font-size: 1.5rem;
+        font-weight:700;
+        text-align: left;
+    }
+    .bio-description{
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    #bio{
+        padding: 2%;
+    }
+    .link{
+        text-decoration: none;
+        display: none;  
+    }
+    .link-tree{
+        align-items: center;
+        margin: 1.3rem;
+        display: block;
+    }
+}
+
+/* @media only screen and (max-width: 768px){
+    .profile-avatar{
+        width: auto;
+        max-width: 154px;
+        height: 70px;
+        margin: 5px;
+    }
+    .bio-name{
+        font-size: 15px;
+        font-weight:600;
+        text-align: left;
+    }
+    .bio-description{
+        font-size: 15px;
+        text-align: left;
+    }
+} */
