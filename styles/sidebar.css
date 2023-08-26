@@ -51,8 +51,8 @@
     border-radius: 50%;
     border-style: solid;    
     border-color: lightgray;
-    border-width: 2px;
-    padding: 2px;
+    border-width: 1px;
+    padding: 3px;
 }
 .bio-name{
     font-size: 1.5rem;
