@@ -64,7 +64,7 @@
     text-align: left;
 }
 
-@media only screen and (max-width: 768px){
+@media (max-width: 768px){
     #sidebar{
         height: unset;
         grid-template-columns: 0.1fr 0.9fr 0.1fr;
