@@ -52,6 +52,7 @@
     border-style: solid;    
     border-color: lightgray;
     border-width: 2px;
+    padding: 2px;
 }
 .bio-name{
     font-size: 1.5rem;
@@ -75,10 +76,6 @@
     .profile-avatar{
         max-height: 66px;
         width: auto;
-        border-radius: 50%;
-        border-style: solid;    
-        border-color: #d4d4d4;
-        border-width: 2px;
     }
     .bio-name{
         font-size: 1.5rem;
