@@ -78,16 +78,17 @@
         width: auto;
     }
     .bio-name{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight:700;
         text-align: left;
     }
     .bio-description{
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-align: left;
     }
     #bio{
         padding: 2%;
+        min-width: 230px;
     }
     .link{
         text-decoration: none;
