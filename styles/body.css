@@ -40,7 +40,7 @@ footer{
 }
 
 
-@media (max-width: 1024px){
+@media screen and (max-width: 1024px){
     .container{    
         display: grid;
         /* height: 100vh; */
@@ -58,7 +58,7 @@ footer{
     }
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     .container{
         grid-template-columns: 1fr;
         grid-template-rows: 52px 108px 1.2fr 150px;
