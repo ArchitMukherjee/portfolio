@@ -1,6 +1,6 @@
 #sidebar{
     display: grid;
-    height: 42vh;
+    height: 400px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.8fr 1.2fr;
     grid-template-areas: 
